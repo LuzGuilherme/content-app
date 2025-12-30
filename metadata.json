@@ -1,0 +1,5 @@
+{
+  "name": "Synclay",
+  "description": "A canvas-based tool to extract video content and repurpose it for social media using Gemini AI.",
+  "requestFramePermissions": []
+}
