@@ -3,7 +3,7 @@ import { ChatMessage } from "../types";
 
 // Helper to get client
 const getClient = () => {
-  const apiKey = process.env.API_KEY;
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
   if (!apiKey) {
     throw new Error("API Key not found in environment variables");
   }

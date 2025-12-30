@@ -2,7 +2,7 @@ import Anthropic from '@anthropic-ai/sdk';
 import { ChatMessage } from '../types';
 
 const getClient = () => {
-    const apiKey = import.meta.env.VITE_ANTHROPIC_API_KEY || import.meta.env.VITE_CLAUDE_API_KEY || process.env.ANTHROPIC_API_KEY || process.env.VITE_ANTHROPIC_API_KEY;
+    const apiKey = import.meta.env.VITE_ANTHROPIC_API_KEY;
     // Note: For a frontend-only demo, we might need to use a proxy or "dangerouslyAllowBrowser: true" if the SDK supports it, 
     // or simple fetch calls if the SDK forces Node environment. 
     // The official SDK often requires Node.js, but let's see if it works with Vite or if we need a workaround.
